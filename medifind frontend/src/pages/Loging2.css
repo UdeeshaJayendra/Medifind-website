@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+
+.loging2-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: radial-gradient(circle at center, #25815e 0%, #1aad79 100%);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+/* Ensure background stays within this page only */
+.loging2-container .medical-bg {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; 
+}
+
+.loging2-container .symbol {
+    position: absolute;
+    /* Renamed animation to be unique */
+    animation: login-floatFullPage linear infinite;
+    filter: drop-shadow(0 0 8px rgba(93, 253, 203, 0.3));
+}
+
+/* Shapes */
+.loging2-container .pill-shape {
+    width: 30px;
+    height: 38px;
+    background: linear-gradient(180deg, #ffffff 50%, #5dfdcb 50%);
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.loging2-container .capsule-shape {
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(93, 253, 203, 0.6);
+    border-radius: 15px;
+    opacity: 0.4;
+}
+
+.loging2-container .medical-plus {
+    color: #5dfdcb;
+    opacity: 0.4;
+}
+
+.loging2-container .bubble {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+
+@keyframes login-floatFullPage {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -50px) rotate(120deg); }
+    66% { transform: translate(-20px, -100px) rotate(240deg); }
+    100% { transform: translate(0, -200px) rotate(360deg); }
+}
+
+@keyframes login-rotateIcon {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(20deg) scale(1.2); }
+    75% { transform: rotate(-20deg) scale(1.2); }
+    100% { transform: rotate(0) scale(1); }
+}
+
+/* CARD STYLES */
+.loging2-container .card {
+    width: 440px;
+    padding: 60px 40px;
+    background: #f8fbf9;
+    border-radius: 50px;
+    border: 4px solid #5dfdcb;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.loging2-container .card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 0 60px rgba(93, 253, 203, 0.6), 0 20px 50px rgba(0, 0, 0, 0.2);
+    border-color: #ffffff;
+}
+
+.loging2-container .card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.loging2-container .card:hover .card-icon {
+    animation: login-rotateIcon 1s ease-in-out;
+}
+
+/* BUTTON STYLES */
+.loging2-container .register-btn {
+    background: #1e4d3b;
+    color: #5dfdcb;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.loging2-container .register-btn:hover {
+    background: #5dfdcb;
+    color: #1e4d3b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(93, 253, 203, 0.4);
+}
+
+.loging2-container .register-btn:active {
+    transform: scale(0.9);
+}

@@ -1,0 +1,287 @@
+/* InventoryTable.css */
+
+/* Main Container - Card Style */
+.inventory-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #eef2f7;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.styled-table th {
+  position: sticky;
+  /* Make the header sticky */
+  top: 0;
+  /* Stick it to the very top of the wrapper */
+  z-index: 10;
+  /* Ensure it floats above the table rows */
+
+  /* Visuals (Must have a background color or rows will scroll behind transparent text) */
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 16px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+  /* Optional: small shadow under header */
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 15px;
+}
+
+.inventory-header h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+  /* Responsive wrapper */
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 600px;
+}
+
+.styled-table thead tr {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.styled-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.styled-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f8fbff;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-in-stock {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-out-of-stock {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+/* Delete Button */
+.btn-delete {
+  background-color: #fff;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Loading and Empty States */
+.loading-state,
+.error-state,
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.error-state {
+  color: #dc3545;
+  background-color: #fff5f5;
+  border-radius: 8px;
+}
+
+/* ... existing styles ... */
+
+
+/* --- Modal Styles --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-content {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform-origin: center center;
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.modal-body {
+  margin-bottom: 32px;
+}
+
+.modal-body p {
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.modal-subtext {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #059669;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-cancel-modal {
+  padding: 12px 24px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel-modal:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+.btn-confirm-modal {
+  padding: 12px 24px;
+  background-color: #059669;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.btn-confirm-modal:hover {
+  background-color: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-confirm-modal:active {
+  transform: translateY(0);
+}
+
+.btn-confirm-modal:disabled {
+  background-color: #10b981;
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
