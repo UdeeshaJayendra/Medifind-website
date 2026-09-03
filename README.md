@@ -2,7 +2,7 @@
 
 MediFind is a full-stack web application designed to help users search for medicines, find pharmacies, manage medicine inventory, place orders, and check potential medicine interactions.
 
-The system connects users and pharmacies through a modern web platform with separate frontend and backend services.
+The system connects users and pharmacies through a modern web platform with separate frontend and backend services
 
 ---
 
