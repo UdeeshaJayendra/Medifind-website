@@ -246,9 +246,9 @@ Then open the frontend in your browser.
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
-**Udeesha Jayendra**
-**Ravindu Randeepa**
+Udeesha Jayendra
+Ravindu Randeepa
 
 ---
