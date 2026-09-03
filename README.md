@@ -186,18 +186,11 @@ Make sure your MongoDB connection is correctly configured before starting the ba
 ## 📸 Screenshots
 
 Add screenshots of your application here.
+<img width="1917" height="917" alt="Screenshot 2026-09-03 150110" src="https://github.com/user-attachments/assets/75005abb-e3bb-4dea-9936-0c7584889690" />
+<img width="1913" height="922" alt="Screenshot 2026-09-03 150056" src="https://github.com/user-attachments/assets/35fc5356-e10f-4877-9704-006e7dadaf9a" />
+<img width="1888" height="731" alt="image" src="https://github.com/user-attachments/assets/53434904-9bcd-45b0-b9c5-bad8292881c7" />
+<img width="1890" height="908" alt="Screenshot 2026-09-03 150207" src="https://github.com/user-attachments/assets/fdc1e03d-6fdc-4523-8125-b94bb66f23cb" />
 
-### Home Page
-
-![Home Page](docs/screenshots/home.png)
-
-### Medicine Search
-
-![Medicine Search](docs/screenshots/medicine-search.png)
-
-### Pharmacy Dashboard
-
-![Pharmacy Dashboard](docs/screenshots/pharmacy-dashboard.png)
 
 > Create a `docs/screenshots` folder and place your screenshots inside it.
 
